@@ -1,10 +1,6 @@
 package ua.edu.ucu.apps.web.flower;
 
 import org.springframework.stereotype.Service;
-import ua.edu.ucu.apps.FlowerStore.flower.Flower;
-import ua.edu.ucu.apps.FlowerStore.flower.FlowerColor;
-
-import java.util.List;
 
 @Service
 public class FlowerService {

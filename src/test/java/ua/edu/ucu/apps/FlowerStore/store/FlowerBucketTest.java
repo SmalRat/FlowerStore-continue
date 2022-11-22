@@ -1,9 +1,9 @@
 package ua.edu.ucu.apps.FlowerStore.store;
 
-import ua.edu.ucu.apps.FlowerStore.flower.Flower;
+import ua.edu.ucu.apps.web.flower.Flower;
 import ua.edu.ucu.apps.FlowerStore.flowers.Rose;
-import ua.edu.ucu.apps.FlowerStore.groups.instancesclasses.FlowerBucket;
-import ua.edu.ucu.apps.FlowerStore.groups.instancesclasses.FlowerPack;
+import ua.edu.ucu.apps.web.flowerBucket.groups.FlowerBucket;
+import ua.edu.ucu.apps.web.flowerBucket.groups.FlowerPack;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
@@ -29,7 +29,7 @@ public class FlowerBucketTest {
         Flower flower = new Rose();
         flower.setPrice(price);
         FlowerPack flowerPack = new FlowerPack(flower, quantity);
-        flowerBucket.add(flowerPack);
+        flowerBucket.addFlowers(flowerPack);
         Assertions.assertEquals(price * quantity, flowerBucket.getPrice());
     }
 }

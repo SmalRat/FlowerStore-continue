@@ -1,7 +1,7 @@
 package ua.edu.ucu.apps.FlowerStore.store;
 
-import ua.edu.ucu.apps.FlowerStore.flower.Flower;
-import ua.edu.ucu.apps.FlowerStore.flower.FlowerColor;
+import ua.edu.ucu.apps.web.flower.Flower;
+import ua.edu.ucu.apps.web.flower.FlowerColor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

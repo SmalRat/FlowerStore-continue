@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.web.flower;
+package ua.edu.ucu.apps.FlowerStore.flower;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,7 +8,6 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Flower {
-    private final String name = "Flower";
     /**
      * Flower class
      */
@@ -43,9 +42,5 @@ public class Flower {
         this.color = color;
         this.price = price;
         this.sepalLength = sepalLength;
-    }
-    @Override
-    public String toString(){
-        return name;
     }
 }

@@ -5,4 +5,4 @@
  * @author
  * @version 1.0
  */
-package flower.store.flowers;
+package ua.edu.ucu.apps.web.flowers;

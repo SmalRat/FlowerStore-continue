@@ -1,7 +1,7 @@
 package ua.edu.ucu.apps.FlowerStore.store;
 
-import ua.edu.ucu.apps.FlowerStore.groups.instancesclasses.FlowerBucket;
-import ua.edu.ucu.apps.FlowerStore.groups.specs.FlowerBucketSpecs;
+import ua.edu.ucu.apps.web.flowerBucket.groups.FlowerBucket;
+import ua.edu.ucu.apps.web.flowerBucket.specs.FlowerBucketSpecs;
 
 import java.util.ArrayList;
 import java.util.List;

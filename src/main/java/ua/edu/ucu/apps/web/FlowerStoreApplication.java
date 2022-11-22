@@ -6,10 +6,9 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import ua.edu.ucu.apps.FlowerStore.flower.Flower;
-import ua.edu.ucu.apps.FlowerStore.flower.FlowerColor;
+import ua.edu.ucu.apps.web.flower.Flower;
+import ua.edu.ucu.apps.web.flower.FlowerColor;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})

@@ -1,7 +1,7 @@
 package ua.edu.ucu.apps.FlowerStore.flowers;
 
-import ua.edu.ucu.apps.FlowerStore.flower.Flower;
-import ua.edu.ucu.apps.FlowerStore.flower.FlowerColor;
+import ua.edu.ucu.apps.web.flower.Flower;
+import ua.edu.ucu.apps.web.flower.FlowerColor;
 
 public class Tulip extends Flower {
     public Tulip(){

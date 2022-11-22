@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.web.flowerBucket.specs;
+package ua.edu.ucu.apps.FlowerStore.groups.specs;
 
 import ua.edu.ucu.apps.web.flower.Flower;
 import ua.edu.ucu.apps.web.flowerBucket.groups.FlowerPack;
@@ -26,18 +26,14 @@ public class FlowerBucketSpecs {
         flowersInBucket.put(flowerType, flowerQuantity);
     }
 
-    public HashMap<Flower, Integer> getSpecsMapCopy() {
+    private HashMap<Flower, Integer> getSpecsMapCopy() {
         return (HashMap<Flower, Integer>) flowersInBucket.clone();
     }
 
-    public boolean equal(FlowerBucketSpecs specs) {
+    public boolean equal(ua.edu.ucu.apps.web.flowerBucket.specs.FlowerBucketSpecs specs) {
         System.out.println(specs.getSpecsMapCopy());
         System.out.println("-------");
         System.out.println(this.getSpecsMapCopy());
         return (this.getSpecsMapCopy().equals(specs.getSpecsMapCopy()));
-    }
-
-    public boolean searchFlower(Flower flowerType) {
-        return flowersInBucket.getOrDefault(flowerType, 0) > 0;
     }
 }

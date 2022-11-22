@@ -3,7 +3,7 @@ package ua.edu.ucu.apps.web.items;
 public class PaperDecorator extends ItemDecorator{
     private final Item item;
 
-    private static final String modifier = " (in paper)";
+    private static final String modifier = ",(in paper)";
 
     public PaperDecorator(Item item){
         this.item = item;

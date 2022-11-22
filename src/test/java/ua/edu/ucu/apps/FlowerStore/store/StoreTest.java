@@ -3,10 +3,9 @@ package ua.edu.ucu.apps.FlowerStore.store;
 import ua.edu.ucu.apps.FlowerStore.flowers.Chamomile;
 import ua.edu.ucu.apps.FlowerStore.flowers.Rose;
 import ua.edu.ucu.apps.FlowerStore.flowers.Tulip;
-import ua.edu.ucu.apps.FlowerStore.groups.instancesclasses.FlowerBucket;
-import ua.edu.ucu.apps.FlowerStore.groups.instancesclasses.FlowerPack;
-import ua.edu.ucu.apps.FlowerStore.groups.specs.FlowerBucketSpecs;
-import ua.edu.ucu.apps.FlowerStore.store.Store;
+import ua.edu.ucu.apps.web.flowerBucket.groups.FlowerBucket;
+import ua.edu.ucu.apps.web.flowerBucket.groups.FlowerPack;
+import ua.edu.ucu.apps.web.flowerBucket.specs.FlowerBucketSpecs;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -70,17 +69,17 @@ public class StoreTest {
         flowerPackSix = new FlowerPack(chamomileOne, amSIXTH);
 
         bucketOne = new FlowerBucket();
-        bucketOne.add(flowerPackOne);
-        bucketOne.add(flowerPackThree);
+        bucketOne.addFlowers(flowerPackOne);
+        bucketOne.addFlowers(flowerPackThree);
 
 
         bucketTwo = new FlowerBucket();
-        bucketTwo.add(flowerPackTwo);
-        bucketTwo.add(flowerPackFive);
+        bucketTwo.addFlowers(flowerPackTwo);
+        bucketTwo.addFlowers(flowerPackFive);
 
         bucketThree = new FlowerBucket();
-        bucketThree.add(flowerPackFour);
-        bucketThree.add(flowerPackSix);
+        bucketThree.addFlowers(flowerPackFour);
+        bucketThree.addFlowers(flowerPackSix);
 
         store.addBucket(bucketOne);
         store.addBucket(bucketTwo);

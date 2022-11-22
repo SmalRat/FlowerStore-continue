@@ -1,13 +1,12 @@
-package ua.edu.ucu.apps.web.flowerBucket.groups;
+package ua.edu.ucu.apps.FlowerStore.groups.instancesclasses;
 
-import ua.edu.ucu.apps.web.flower.Flower;
 import ua.edu.ucu.apps.web.flowerBucket.specs.FlowerBucketSpecs;
-import ua.edu.ucu.apps.web.items.Item;
+import ua.edu.ucu.apps.web.flowerBucket.groups.FlowerPack;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public final class FlowerBucket extends Item {
+public final class FlowerBucket {
     /**
      * Specifications of this bucket.
      * Linter... just be quiet..
@@ -18,14 +17,14 @@ public final class FlowerBucket extends Item {
     /**
      * List of the packs inside bucket.
      */
-    private final List<FlowerPack> flowerPacks = new ArrayList<>();
+    private final List<ua.edu.ucu.apps.web.flowerBucket.groups.FlowerPack> flowerPacks = new ArrayList<>();
 
 
     /**
      * Adds a pack of flowers to this bucket.
      * @param flowerPack flowerPacks to add.
      */
-    public void addFlowers(final FlowerPack flowerPack) {
+    public void add(final ua.edu.ucu.apps.web.flowerBucket.groups.FlowerPack flowerPack) {
         flowerPacks.add(flowerPack);
         specs.add(flowerPack);
     }
@@ -35,7 +34,7 @@ public final class FlowerBucket extends Item {
      * Returns the copy of flower packs inside this bucket.
      * @return returns an array
      */
-    public ArrayList<FlowerPack> getFlowerPacks() {
+    public ArrayList<ua.edu.ucu.apps.web.flowerBucket.groups.FlowerPack> getFlowerPacks() {
         return new ArrayList<FlowerPack>(flowerPacks);
     }
 
@@ -49,10 +48,6 @@ public final class FlowerBucket extends Item {
         return (this.specs.equal(otherSpecs));
     }
 
-    public boolean searchFlower(Flower flowerType){
-        return specs.searchFlower(flowerType);
-    }
-
 
     /**
      * Returns the price of the bucket.
@@ -60,18 +55,6 @@ public final class FlowerBucket extends Item {
      */
     public double getPrice() {
         return specs.getPrice();
-    }
-
-    public double price(){
-        return getPrice();
-    }
-
-    public String toString(){
-        StringBuilder toStr = new StringBuilder("FlowerBucket{");
-        for (FlowerPack flowerPack: flowerPacks){
-            toStr.append(flowerPack.toString()).append(", ");
-        }
-        return toStr + "}";
     }
 
 }

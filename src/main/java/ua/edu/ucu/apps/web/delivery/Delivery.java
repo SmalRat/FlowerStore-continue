@@ -1,4 +1,9 @@
-package ua.edu.ucu.apps.web;
+package ua.edu.ucu.apps.web.delivery;
 
-public class Delivery {
+import ua.edu.ucu.apps.web.items.Item;
+
+import java.util.List;
+
+public interface Delivery {
+    String deliver(List<Item> items);
 }

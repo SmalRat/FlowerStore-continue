@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.web.flowerBucket.groups;
+package ua.edu.ucu.apps.FlowerStore.groups.instancesclasses;
 
 import ua.edu.ucu.apps.web.flower.Flower;
 import lombok.Getter;
@@ -13,10 +13,5 @@ public class FlowerPack {
 
     public double getPrice() {
         return amount * flower.getPrice();
-    }
-
-    @Override
-    public String toString() {
-        return "FlowerPack {Flower: " + flower.toString() + ", amount: " + amount + "}";
     }
 }
