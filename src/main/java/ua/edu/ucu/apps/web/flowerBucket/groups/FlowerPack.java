@@ -1,6 +1,6 @@
 package ua.edu.ucu.apps.FlowerStore.groups.instancesclasses;
 
-import ua.edu.ucu.apps.FlowerStore.flower.Flower;
+import ua.edu.ucu.apps.web.flower.Flower;
 import lombok.Getter;
 @Getter
 public class FlowerPack {
