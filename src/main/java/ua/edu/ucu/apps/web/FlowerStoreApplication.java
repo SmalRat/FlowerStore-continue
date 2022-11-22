@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import ua.edu.ucu.apps.FlowerStore.flower.Flower;
+import ua.edu.ucu.apps.FlowerStore.flower.FlowerColor;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,8 +21,8 @@ public class FlowerStoreApplication {
 	}
 
 	@GetMapping("/flowers")
-	public List<Flower> hello(){
-		return new ArrayList<Flower>();
+	public List<Flower> getFlowers(){
+		return List.of(new Flower(FlowerColor.BLUE, 50, 100), new Flower(FlowerColor.BLUE, 40, 80), new Flower(FlowerColor.RED, 60, 120));
 	}
 
 	@GetMapping("/test")

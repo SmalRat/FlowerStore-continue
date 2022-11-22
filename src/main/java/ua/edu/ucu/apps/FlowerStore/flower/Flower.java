@@ -6,12 +6,11 @@ import lombok.Setter;
 
 
 @Setter
+@Getter
 public class Flower {
     /**
      * Flower class
      */
-
-    @Getter
     private double sepalLength;
     /**
      * Sepal length
@@ -21,7 +20,6 @@ public class Flower {
     /**
      * Color of the flower
      */
-    @Getter
     private double price;
     /**
      * The price of flower
